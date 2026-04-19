@@ -3,6 +3,11 @@ import { Todo } from './todo.js';
 import { AppController } from './appController.js';
 import { DOM } from './dom.js';
 
+// TEMPORARY FOR TESTING: Expose these to the global window object
+window.Todo = Todo;
+window.AppController = AppController;
+window.DOM = DOM;
+
 // // 1. Get the list of projects (currently just "Inbox")
 // const myProjects = AppController.getProjects();
 // const inbox = myProjects[0];
