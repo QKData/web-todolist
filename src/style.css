@@ -186,3 +186,41 @@ background-color: #dc2626;
 padding: 4px 8px;
 font-size: 0.8rem;
 }
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+  /* Change from side-by-side to stacked vertically */
+  #app-container {
+    flex-direction: column;
+    overflow-y: auto; 
+  }
+
+  /* Make the sidebar stretch all the way across */
+  #sidebar {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  /* Reduce padding on the main content for smaller screens */
+  #main-content {
+    padding: 20px;
+    overflow-y: visible;
+  }
+
+  /* Stack the form inputs vertically on mobile */
+  form {
+    flex-direction: column;
+  }
+
+  form input, 
+  form select, 
+  form button {
+    width: 100%;
+  }
+
+  /* Ensure the grid doesn't break on extremely small phones */
+  #todo-container {
+    grid-template-columns: 1fr; 
+  }
+}
