@@ -37,5 +37,5 @@ To run this project locally on your machine, follow these steps:
 ### Prerequisites
 You need [Node.js](https://nodejs.org/) and `npm` installed on your machine.
 
-🤝 Acknowledgments
+## 🤝 Acknowledgments
 The Odin Project for the fantastic curriculum and project prompt.
